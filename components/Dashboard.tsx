@@ -123,36 +123,7 @@ const Dashboard: React.FC<DashboardProps> = ({ data, onGetInsights, insights, is
         </div>
       </div>
 
-      <div className="bg-gradient-to-br from-indigo-500 to-purple-600 rounded-xl p-6 text-white shadow-lg">
-        <div className="flex items-center justify-between mb-4">
-          <div className="flex items-center gap-3">
-            <div className="p-2 bg-white/20 rounded-lg backdrop-blur-sm">
-              <Cpu size={24} />
-            </div>
-            <div>
-              <h3 className="text-xl font-bold">Consultant IA Gemini</h3>
-              <p className="text-indigo-100 text-sm">Analyse intelligente de votre activité</p>
-            </div>
-          </div>
-          <button 
-            onClick={onGetInsights}
-            disabled={isGenerating}
-            className="bg-white text-indigo-600 px-4 py-2 rounded-lg font-semibold shadow-md hover:bg-indigo-50 transition-colors disabled:opacity-50"
-          >
-            {isGenerating ? 'Analyse...' : 'Générer Conseils'}
-          </button>
-        </div>
-        
-        {insights ? (
-          <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/10 whitespace-pre-wrap leading-relaxed">
-            {insights}
-          </div>
-        ) : (
-          <p className="italic text-indigo-100 opacity-70">
-            Cliquez pour recevoir une analyse détaillée des performances de votre station.
-          </p>
-        )}
-      </div>
+
     </div>
   );
 };
