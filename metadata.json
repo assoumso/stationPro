@@ -1,0 +1,5 @@
+{
+  "name": "StationPro",
+  "description": "A comprehensive gas station management dashboard for tracking fuel indices, tank levels, shop inventory, sales, and financial reports with AI-powered insights.",
+  "requestFramePermissions": []
+}
